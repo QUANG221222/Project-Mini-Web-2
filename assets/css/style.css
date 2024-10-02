@@ -147,6 +147,9 @@ a {
   object-fit: cover;
 }
 .media-block__courses {
+  position: absolute;
+  top: 149px;
+  left: -40px;
   width: 157px;
   height: 75px;
   border-radius: 18px;
@@ -154,11 +157,90 @@ a {
   box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 16px;
+}
+.media-block__courses--icon {
+  position: relative;
+  margin-left: 25px;
+}
+.media-block__courses--icon svg:nth-of-type(2) {
+  position: absolute;
+  bottom: 5px;
+  left: 4px;
 }
 .media-block__courses--title {
   width: 55px;
-  color: #0d1111;
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 25px;
+  line-height: 1.57;
+}
+.media-block__schedules {
+  width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  bottom: 79px;
+  left: -65px;
+}
+.media-block__schedules--title {
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.media-block__schedules--progs {
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+.media-block__schedules--progs::before {
+  content: "";
+  width: 26px;
+  height: 6px;
+  border-radius: 3px;
+  background: #edf1f5;
+  position: absolute;
+  bottom: -22px;
+  left: 24px;
+}
+.media-block__students {
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+}
+.media-block__students--inner {
+  width: 137px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.meadia-block__student--title {
+  color: var(--heading-color);
   font-size: 1rem;
   font-weight: 500;
+}
+.media-block--students--avt2,
+.media-block--students--avt3,
+.media-block--students--avt4,
+.media-block--students--avt5 {
+  margin-left: -14px;
 }
